@@ -9,12 +9,10 @@ public class SecondLessonHomeWork {
         System.out.println("Please answer how many numbers you will insert?");
         int insertedNumbers = Integer.valueOf(scanner.nextLine());
         for (int i = 0; i < insertedNumbers; i++) {
-            if (insertedNumbers > 0) {
-                System.out.println("Insert next number!");
-                int variable = Integer.valueOf(scanner.nextLine());
-                if (variable > start) {
+            System.out.println("Insert next number!");
+            int variable = Integer.valueOf(scanner.nextLine());
+            if (variable > start) {
                     start = variable;
-                }
             }
         }
         if (insertedNumbers < 1) {
