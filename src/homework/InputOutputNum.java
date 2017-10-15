@@ -8,5 +8,6 @@ public class InputOutputNum {
         System.out.println("Enter any number!");
         int enteredNum = Integer.valueOf(scanner.nextLine());
         System.out.println("You have entered: " + enteredNum);
+        scanner.close();
     }
 }
