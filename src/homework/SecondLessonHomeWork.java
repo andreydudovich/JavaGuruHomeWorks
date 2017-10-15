@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SecondLessonHomeWork {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int start = 0; //Starting point
+        int start = Integer.MIN_VALUE; //Starting point
         System.out.println("Please answer how many numbers you will insert?");
         int insertedNumbers = Integer.valueOf(scanner.nextLine());
         for (int i = 0; i < insertedNumbers; i++) {
