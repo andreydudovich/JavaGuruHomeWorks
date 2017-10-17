@@ -16,10 +16,10 @@ public class RootsOfQuadraticEquation {
         int bDisc = Integer.valueOf(scanner.nextLine());
         System.out.println("Please insert c.");
         int cDisc = Integer.valueOf(scanner.nextLine());
-        int Discriminant = bDisc*bDisc - 4*aDisc*cDisc;
+        int Discriminant = bDisc * bDisc - 4 * aDisc * cDisc;
         if (Discriminant >= 0) {
-            double x1 = (-bDisc+Math.sqrt(Discriminant))/(2*aDisc);
-            double x2 = (-bDisc-Math.sqrt(Discriminant))/(2*aDisc);
+            double x1 = (-bDisc + Math.sqrt(Discriminant)) / (2 * aDisc);
+            double x2 = (-bDisc - Math.sqrt(Discriminant)) / (2 * aDisc);
             System.out.println("1st Root x1 is: " + x1);
             System.out.println("2nd Root x2 is: " + x2);
         } else {
