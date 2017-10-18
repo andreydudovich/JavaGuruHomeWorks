@@ -5,8 +5,7 @@ import java.util.Random;
 public class AverageArrayNumber {
     public static void main(String[] args) {
         int[] arr = new int[10];
-        int arrayAverage = getAverageValueOfRandomArray(arr); /*не могу понять что именно передавать как переменную,
-        или может для каждого for надо сделать отдельную функцию*/
+        int arrayAverage = getAverageValueOfRandomArray(arr);
         System.out.println("Average value of array is " + arrayAverage);
         System.out.println("There are a list of values that are bigger than average: ");
         for (int i = 0; i < 10; i++) {
