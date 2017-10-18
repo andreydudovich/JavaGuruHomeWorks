@@ -20,5 +20,6 @@ public class TheBiggestOfTwoEnteredNumbers {
         } else {
             System.out.printf("The biggest entered number is B: " + enteredNumberB);
         }
+        scanner.close();
     }
 }

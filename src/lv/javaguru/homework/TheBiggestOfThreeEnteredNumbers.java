@@ -33,6 +33,7 @@ public class TheBiggestOfThreeEnteredNumbers {
         if (enteredNumberA == enteredNumberB && enteredNumberB == enteredNumberC){
             System.out.println("All numbers are equal. A == B == C");
         }
+        scanner.close();
     }
 }
 

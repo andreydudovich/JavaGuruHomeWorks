@@ -21,5 +21,6 @@ public class MoreOrLessOrEqual {
         } else {
             System.out.printf("The number is positive!");
         }
+        scanner.close();
     }
 }
