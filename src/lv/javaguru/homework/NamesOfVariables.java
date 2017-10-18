@@ -1,4 +1,4 @@
-package homework;
+package lv.javaguru.homework;
 
 public class NamesOfVariables {
     public static void main(String[] args) {
