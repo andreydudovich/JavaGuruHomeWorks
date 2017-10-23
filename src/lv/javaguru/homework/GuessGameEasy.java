@@ -15,7 +15,7 @@ public class GuessGameEasy {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         int guessNumber = random.nextInt(100) + 1; //Программа загадывает число от 1 до 100 случайным образом.
-        System.out.println("The computer makes a guess number. Try to find out it.");
+        System.out.println("The computer makes a guess number. Try to find out it!");
         System.out.print("Enter guess number: ");
         int playerEnteredNumber = Integer.valueOf(scanner.nextLine());
         while (guessNumber != playerEnteredNumber){
