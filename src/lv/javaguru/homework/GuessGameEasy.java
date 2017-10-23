@@ -15,14 +15,14 @@ public class GuessGameEasy {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         int guessNumber = random.nextInt(100) + 1; //Программа загадывает число от 1 до 100 случайным образом.
-        System.out.println("The computer makes a guess number. Try to find out it!");
+        System.out.println("The computer makes a guess number. Try to find it out!");
         System.out.print("Enter guess number: ");
         int playerEnteredNumber = Integer.valueOf(scanner.nextLine());
-        while (guessNumber != playerEnteredNumber){
-            if (guessNumber > playerEnteredNumber){
+        while (guessNumber != playerEnteredNumber) {
+            if (guessNumber > playerEnteredNumber) {
                 System.out.print("Guess number is greater! Try again: ");
                 playerEnteredNumber = Integer.valueOf(scanner.nextLine());
-            } else if (guessNumber < playerEnteredNumber){
+            } else if (guessNumber < playerEnteredNumber) {
                 System.out.print("Guess number is smaller! Try again: ");
                 playerEnteredNumber = Integer.valueOf(scanner.nextLine());
             }
@@ -31,5 +31,4 @@ public class GuessGameEasy {
             System.out.println("You WIN! Guess number is correct: " + playerEnteredNumber);
         }
     }
-
 }
