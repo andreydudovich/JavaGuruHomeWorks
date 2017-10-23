@@ -35,12 +35,12 @@ public class GuessGameHardMinSteps {
                     System.out.println("Then maybe guess number is: " + computerGuessNumber);
                     System.out.print("Is your number Less or More? ");
                     userAnswer = scanner.nextLine();
-                    computerGuessNumber--;
+                    computerGuessNumber--; //Глупо, я знаю. Андрей, если ты это читаешь, то я еще напишу отдельный метод для этого, более умный. Запушил, так как писал на рабочем компе, а доступ надо дома.
                 } else if (userAnswer.equals("More")) {
                     System.out.println("Then maybe guess number is: " + computerGuessNumber);
                     System.out.print("Is your number Less or More? ");
                     userAnswer = scanner.nextLine();
-                    computerGuessNumber++;
+                    computerGuessNumber++; //Глупо, я знаю. Андрей, если ты это читаешь, то я еще напишу отдельный метод для этого, более умный. Запушил, так как писал на рабочем компе, а доступ надо дома.
                 } else {
                     System.out.print("You made an error. Please insert Less or More: ");
                     userAnswer = scanner.nextLine();
