@@ -22,16 +22,16 @@ public class GuessGameHardMinSteps {
         System.out.print("User please guess a number between 1 and 100. Enter it: ");
         int guessNumber = Integer.valueOf(scanner.nextLine());
         int leftBorder = 1;
-        int rightBorder = 100;
-        int computerGuessNumber = (rightBorder - leftBorder) / 2; //smart value :D
-        String userAnswer;
-        if (guessNumber < 1 || guessNumber > 100) {
-            wrongGuessNumberInserted(guessNumber);
-        } else {
+        int rightBorder = 101; //Так как если будет 100, то мой "умный алгоритм будет выдавать 99 99 99 в конце из-за деления на 2."
+        int computerGuessNumber = (rightBorder - leftBorder + 1) / 2; //smart value :D
+        String userAnswer = ""; //оооочень не нравится, как сделать лучше?
+        if (guessNumber >= 1 && guessNumber <= 100) {
             computerGuessNumber(computerGuessNumber);
             userAnswer = scanner.nextLine();
+        } else {
+            wrongGuessNumberInserted(guessNumber);
         }
-        while ((guessNumber > 1 && guessNumber < 100) && guessNumber != computerGuessNumber) {
+        while ((guessNumber >= 1 && guessNumber <= 100) && guessNumber != computerGuessNumber) {
             if (userAnswer.equals("More")) {
                 leftBorder = computerGuessNumber;
                 computerGuessNumber = smartAlgoritmToGetGuessNumber(rightBorder, leftBorder);
@@ -47,18 +47,15 @@ public class GuessGameHardMinSteps {
         }
     }
 
-
     public static int smartAlgoritmToGetGuessNumber(int rightBorder, int leftBorder) {
         int rangeMiddle = (rightBorder - leftBorder) / 2;
         int computerGuessNumber = leftBorder + rangeMiddle;
         return computerGuessNumber;
     }
-
     public static void computerGuessNumber(int computerGuessNumber) {
         System.out.println("Computer thinks it is number: " + computerGuessNumber);
         System.out.print("Is your number Less, More or Equal: ");
     }
-
     public static void winningOutput(int computerGuessNumber) {
         System.out.println("Game ends. Computer WINs! Guess number is correct: " + computerGuessNumber);
     }
