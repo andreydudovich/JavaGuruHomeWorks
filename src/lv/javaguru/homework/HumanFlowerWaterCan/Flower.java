@@ -15,6 +15,7 @@ class Flower {
             System.out.println("The flower is watered!");
         } else {
             System.out.println("The flower is NOT watered!");
+            System.out.println();
         }
     }
 }
