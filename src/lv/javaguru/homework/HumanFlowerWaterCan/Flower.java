@@ -10,6 +10,7 @@ class Flower {
     public boolean getWatered() {
         return watered;
     }
+
     public void isWatered() {
         if (watered) {
             System.out.println("The flower is watered!");

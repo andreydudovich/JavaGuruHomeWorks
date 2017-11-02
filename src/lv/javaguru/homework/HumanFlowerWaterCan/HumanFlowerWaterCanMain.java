@@ -6,14 +6,14 @@ public class HumanFlowerWaterCanMain {
         Human human = new Human();
         Flower flower = new Flower();
 
-        human.water(flower); //Flower is not eatered
-        flower.isWatered(); // No
+        human.water(flower); //No watering can
+        flower.isWatered();  //Flower is not watered
         human.takeWaterCan(new WaterCan());
-        human.water(flower);
-        flower.isWatered();
+        human.water(flower); //Watering can is empty
+        flower.isWatered();  //Flower is not watered
         human.fillWaterCan(new Water());
         human.water(flower);
-        flower.isWatered();
+        flower.isWatered();  //Flower is watered
     }
 }
 
