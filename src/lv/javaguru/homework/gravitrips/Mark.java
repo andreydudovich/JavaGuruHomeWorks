@@ -3,9 +3,11 @@ package lv.javaguru.homework.gravitrips;
 //enum for our fields
 
 enum  Mark {
-    X("X"), O("O"), EMPTY(" ");
+    X("X"), O("O"), EMPTY("_");
 
     private String value;
+
+
     Mark (String value){
         this.value = value;
     }
@@ -20,6 +22,6 @@ enum  Mark {
 
     @Override
     public String toString(){
-        return value;
+        return this.value;
     }
 }

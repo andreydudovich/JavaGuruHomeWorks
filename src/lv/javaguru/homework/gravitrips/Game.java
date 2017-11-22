@@ -4,4 +4,6 @@ package lv.javaguru.homework.gravitrips;
 
 public class Game {
     Field field = new Field();
+
+
 }
