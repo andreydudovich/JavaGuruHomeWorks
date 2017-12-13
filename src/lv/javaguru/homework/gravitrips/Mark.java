@@ -2,13 +2,13 @@ package lv.javaguru.homework.gravitrips;
 
 //enum for our fields
 
-enum  Mark {
+enum Mark {
     X("X"), O("O"), EMPTY("_");
 
     private String value;
 
 
-    Mark (String value){
+    Mark(String value) {
         this.value = value;
     }
 
@@ -21,7 +21,7 @@ enum  Mark {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return this.value;
     }
 }

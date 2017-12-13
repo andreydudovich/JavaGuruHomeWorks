@@ -1,4 +1,11 @@
 package lv.javaguru.homework.gravitrips;
 
-public class ComputerPlayer implements Player {
+import java.util.Random;
+
+public class ComputerPlayer extends Player {
+    @Override
+    public int selectColumn() {
+        Random random = new Random();
+        return random.nextInt(7);
+    }
 }

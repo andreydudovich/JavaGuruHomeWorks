@@ -57,7 +57,7 @@ public class GuessGameHardMinSteps {
         System.out.print("Is your number Less, More or Equal: ");
     }
     public static void winningOutput(int computerGuessNumber) {
-        System.out.println("Game ends. Computer WINs! Guess number is correct: " + computerGuessNumber);
+        System.out.println("GameConfiguration ends. Computer WINs! Guess number is correct: " + computerGuessNumber);
     }
     public static void wrongGuessNumberInserted(int guessNumber) {
         System.out.println("User please don't cheat! Enter number between 1 and 100! The number " + guessNumber + " is wrong.");
